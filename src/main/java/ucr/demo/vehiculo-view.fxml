@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="ucr.demo.VehiculoController">
+
+    <children>
+
+        <TableView fx:id="tablaVehiculo" layoutX="20" layoutY="20" prefWidth="500" prefHeight="300">
+            <columns>
+                <TableColumn fx:id="colPlaca" text="Placa" prefWidth="120"/>
+                <TableColumn fx:id="colMarca" text="Marca" prefWidth="120"/>
+                <TableColumn fx:id="colModelo" text="Modelo" prefWidth="120"/>
+                <TableColumn fx:id="colConductor" text="Cédula Conductor" prefWidth="140"/>
+            </columns>
+        </TableView>
+
+        <Label text="Placa:" layoutX="550" layoutY="40"/>
+        <TextField fx:id="txtPlaca" layoutX="650" layoutY="40"/>
+
+        <Label text="Marca:" layoutX="550" layoutY="90"/>
+        <TextField fx:id="txtMarca" layoutX="650" layoutY="90"/>
+
+        <Label text="Modelo:" layoutX="550" layoutY="140"/>
+        <TextField fx:id="txtModelo" layoutX="650" layoutY="140"/>
+
+        <Label text="Cédula Conductor:" layoutX="550" layoutY="190"/>
+        <TextField fx:id="txtConductor" layoutX="650" layoutY="190"/>
+
+        <Button text="Agregar" layoutX="550" layoutY="250" onAction="#agregarVehiculo"/>
+        <Button text="Actualizar" layoutX="650" layoutY="250" onAction="#actualizarVehiculo"/>
+        <Button text="Eliminar" layoutX="760" layoutY="250" onAction="#eliminarVehiculo"/>
+
+    </children>
+
+</AnchorPane>
