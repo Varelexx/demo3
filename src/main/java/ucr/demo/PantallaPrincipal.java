@@ -39,7 +39,7 @@ public class PantallaPrincipal {
 
 
 
-        return new Scene(layout, 420, 420);
+        return new Scene(layout, 500, 500);
 
     }
 
